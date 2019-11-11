@@ -24,6 +24,5 @@ public interface PolicyRepository extends CrudRepository<Policy,Long>{
 	
 	
 	
-	
 
 }

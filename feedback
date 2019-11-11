@@ -1,8 +1,19 @@
 Team Name(s):  
 
 Document and describe any enhancements included to help the judges properly grade your submission.
-	Step 1:
-	Step 2: 
+	Step 1: Fixed Issue with policy parsing \r to \n
+	Step 2: Added Support for Spring Boot Tomcat
+	Step 3: Organized Class Structure
+	Step 4: Created an embedded H2-database using JPA and Hibernate to process Policy Entities
+	Step 5: Add Spring Repository Support to query the database
+	Step 6: Created a Spring MVC Controller to processing visualizations on the data
+	Step 7: Created Templates for Processing multi-variate bar graphs in html and javascript using HighChart API
+	Step 8: Using the spring modelview  enabled passin to the templated
+	Step 9: Created a simple navigation bar and exposed the H2 Console
 	
+	*Several data use-cases were identified to be plotted:
+	1. Age vs Accidents (Revenue per instance)
+	2. By-State Policy Premium data
+	3. By-State Policy Status
 	
 Feedback for the coding competition?  Things you would like to see in future events?
