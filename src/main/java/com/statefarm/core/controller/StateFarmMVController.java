@@ -10,7 +10,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import com.statefarm.core.dao.Policy;
 import com.statefarm.core.dao.PolicyRepository;
+import com.statefarm.core.util.Reader;
 
 @Controller
 public class StateFarmMVController 
@@ -94,6 +96,16 @@ public class StateFarmMVController
 	public String home(Model model)
 	{
 		return "home";
+	}
+
+	
+	@GetMapping("/addPoints")
+	public String dataProcessing() throws Exception
+	{
+		List<Policy> policies = new Reader().read();
+		policyRepository.saveAll(policies);
+		return "addPoints";
+		
 	}
 	
 	
