@@ -1,4 +1,4 @@
-package com.statefarm.codingcomp;
+package com.statefarm.core.controller;
 
 import java.util.List;
 
