@@ -1,4 +1,4 @@
-package com.statefarm.codingcomp.reader;
+package com.statefarm.core.util;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -8,7 +8,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.statefarm.codingcomp.model.Policy;
+import com.statefarm.core.dao.Policy;
 
 public class Reader {
 
@@ -27,7 +27,7 @@ public class Reader {
 				fis.close();
 			}
 		}
-		String[] contents = new String(data, "UTF-8").split("\r");
+		String[] contents = new String(data, "UTF-8").split("\n");
 		List<Policy> policies = new ArrayList<>();
 		for(String policy : contents) {
 			policies.add(new Policy(policy.split(",")));
